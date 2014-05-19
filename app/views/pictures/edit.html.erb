@@ -1,0 +1,22 @@
+<h1>Edit a Picture</h1>
+
+<form action="http://localhost:3000/update_picture">
+  <div>
+    <label for = "id_number">ID Number:</label>
+    <input id = "id_number" type = "integer" value = <%= @picture.id %> name = "id" readonly>
+  </div>
+
+  <div>
+    <label for = "the_caption">Caption:</label>
+    <input id = "the_caption" type = "text" value = <%= @picture.caption %> name = "caption">
+  </div>
+
+  <div>
+    <label for = "image_url">Image URL:</label>
+    <input id = "image_url" type = "text" value = <%= @picture.source %>  name = "source" >
+  </div>
+
+  <div>
+    <input type = "submit" value = "Update Picture">
+  </div>
+</form>
